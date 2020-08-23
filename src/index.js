@@ -17,10 +17,10 @@ app.get('/', async (req, res) => {
 app.post('/', async (apiRequest, apiResponse) => {
   const newProduct = apiRequest.body;
   await createProduct(newProduct);
-  apiResponse.send({ message: 'New product created.',
-allProducts: await getProducts()
+  apiResponse.send({ message: 'New product created.'});
+//allProducts: await getProducts()
 });
-});
+
 
 // endpoint to delete a product
 app.delete('/:productId', async (apiRequest, apiResponse) => {
