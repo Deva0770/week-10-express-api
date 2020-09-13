@@ -1,8 +1,9 @@
+### Test the home page endpoint
 
-get http://localhost:3001
+GET http://localhost:3001
 
 ###Test a 404
-get http://localhost:3001/testing-404
+GET http://localhost:3001/testing-404
 
 ### Test the PUT which should change a product
 POST http://localhost:3001/
